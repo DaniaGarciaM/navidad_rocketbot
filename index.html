@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
             align-items: center;
             height: 100vh;
         }
+
         .form-container {
             background-color: #fff;
             padding: 20px;
@@ -23,28 +25,36 @@
             width: 100%;
             max-width: 400px;
         }
+
         .form-container h1 {
             text-align: center;
             color: #d64550;
         }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
         }
-        .form-group input, .form-group select {
+
+        .form-group input,
+        .form-group select {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .form-group input:focus, .form-group select:focus {
+
+        .form-group input:focus,
+        .form-group select:focus {
             border-color: #007bff;
             outline: none;
         }
+
         .submit-btn {
             width: 100%;
             padding: 10px;
@@ -55,9 +65,11 @@
             cursor: pointer;
             font-size: 16px;
         }
+
         .submit-btn:hover {
             background-color: #a1343a;
         }
+
         .message {
             text-align: center;
             margin-top: 20px;
@@ -66,6 +78,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="form-container">
         <h1>Carta para Santa Claus</h1>
@@ -105,7 +118,12 @@
             event.preventDefault(); // Evita el envío del formulario
             message.style.display = 'block'; // Muestra el mensaje
             form.reset();
+
+            setTimeout(function () {
+                message.style.display = 'none';
+            }, 10000);
         });
     </script>
 </body>
+
 </html>
